@@ -1,4 +1,6 @@
 	class PostsController < ApplicationController
+		#los usuarios sin identifificar solo puenden incresar a eso metodos
+		before_action :authenticate_user!,except:[:index,:show]
 
 		def index
 			@posts= Post.all.order('created_at DESC')

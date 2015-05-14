@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#devise
+gem 'devise', :git => 'https://github.com/plataformatec/devise.git'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
